@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifa Chapulhuacán - El Rayo</title>
+    <link rel="stylesheet" href="precioscombi.css">
+    <style>
+        h1 {
+            color: #296126;
+            text-align: center;
+        }
+        p {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        select, input[type="text"] {
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; 
+            
+        }
+        input[type="text"] {
+            text-align: center;
+            margin-top: 20px;
+        
+        
+            }
+        
+        .bienvenida {
+            background-color: #e0f2f7; 
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .bienvenida h3 {
+            color: #1976d2; 
+            margin-bottom: 5px;
+        }
+        .resultado-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .resultado-texto {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .buen-viaje {
+            margin-top: 5px;
+            font-style: italic;
+            color: #777;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGOGOGO.png">
+        </div>
+        <nav>
+            <a href="../acerca de.html" class="nav-link">Inicio</a>
+            <a href="#" class="nav-link">Tarifas</a>
+            <a href="../Sesión/login.html" class="nav-link">Sesión</a>
+            <a href="../mapa/mapa.html" class="nav-link">Mapa</a>
+        </nav>
+    </header>
+    <h1>Costos Chapulhuacán - El Rayo</h1>
+    <p>La base de las combis se encuentra en el Centro de Chapulhuacán.</p>
+
+    <div class="bienvenida">
+    <h3>¡Bienvenido!</h3>
+    <p>Selecciona tu lugar de origen y tu destino para obtener el costo de tu viaje.</p>
+    </div>
+
+    <label for="origen">Origen:</label>
+    <select id="origen"></select>
+
+    <label for="destino">Destino:</label>
+    <select id="destino"></select>
+
+    <div class="resultado-container">
+    <div class="resultado-texto">El costo de tu viaje es de:</div>
+    
+    <input type="text" id="resultado" readonly>
+    <div class="buen-viaje">¡Buen viaje!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

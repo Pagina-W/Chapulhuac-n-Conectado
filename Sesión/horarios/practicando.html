@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horarios</title>
+    <script src="practicando.js"></script>
+    <link rel="stylesheet" href="practicando.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGOGOGO.png">
+        </div>
+        <nav>
+            <a href="../../acerca de.html" class="nav-link">Inicio</a>
+            <a href="../../tarifas/precios combi.html" class="nav-link">Tarifas</a>
+            <a href="../login.html" class="nav-link">Sesión</a>
+            <a href="../../mapa/mapa.html" class="nav-link">Mapa</a>
+        </nav>
+    </header>
+    <center><h1> HORARIOS CHAPULHUACAN-EL RAYO</h1></center>
+    <br>
+    <center>
+    <form method="post">
+        <input type="date" id="txtDate" name="txtDate" >
+        <br>
+        <br>
+        <table border="1">
+            <tr>
+                <td>No.</td>
+                <td> 
+                    <center>
+                        RUTA
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        HORA
+                    </center>
+                    <center>
+                        DE SALIDA
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        Aprox.
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        PUNTO MEDIO
+                    </center>
+                    <center>
+                        (SANTA ANA)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        HORA
+                    </center>
+                    <center>
+                        DE LLEGADA
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS1" id="txtHrS1" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox1" id="btnAprox1" onclick="Calcular1()"></td>
+                
+                <td> <input type="time" name="txtPM1" id="txtPM1"></td>
+
+                <td><input type="time" name="txtHrL1" id="txtHrL1"> </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS2" id="txtHrS2" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox2" id="btnAprox2" onclick="Calcular2()"></td>
+                
+                <td> <input type="time" name="txtPM2" id="txtPM2"></td>
+
+                <td><input type="time" name="txtHrL2" id="txtHrL2"> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS3" id="txtHrS3" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox3" id="btnAprox3" onclick="Calcular3()"></td>
+                
+                <td> <input type="time" name="txtPM3" id="txtPM3"></td>
+
+                <td><input type="time" name="txtHrL3" id="txtHrL3"> </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS4" id="txtHrS4" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox4" id="btnAprox4" onclick="Calcular4()"></td>
+                
+                <td> <input type="time" name="txtPM4" id="txtPM4"></td>
+
+                <td><input type="time" name="txtHrL4" id="txtHrL4"> </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS5" id="txtHrS5" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox2" id="btnAprox5" onclick="Calcular5()"></td>
+                
+                <td> <input type="time" name="txtPM5" id="txtPM5"></td>
+
+                <td><input type="time" name="txtHrL5" id="txtHrL5"> </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS6" id="txtHrS6" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox6" id="btnAprox6" onclick="Calcular6()"></td>
+                
+                <td> <input type="time" name="txtPM6" id="txtPM6"></td>
+
+                <td><input type="time" name="txtHrL6" id="txtHrL6"> </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS7" id="txtHrS7" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox2" id="btnAprox7" onclick="Calcular7()"></td>
+                
+                <td> <input type="time" name="txtPM7" id="txtPM7"></td>
+
+                <td><input type="time" name="txtHrL7" id="txtHrL7"> </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS8" id="txtHrS8" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox8" id="btnAprox8" onclick="Calcular8()"></td>
+                
+                <td> <input type="time" name="txtPM8" id="txtPM8"></td>
+
+                <td><input type="time" name="txtHrL8" id="txtHrL8"> </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS9" id="txtHrS9" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox9" id="btnAprox9" onclick="Calcular9()"></td>
+                
+                <td> <input type="time" name="txtPM9" id="txtPM9"></td>
+
+                <td><input type="time" name="txtHrL9" id="txtHrL9"> </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS10" id="txtHrS10" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox10" id="btnAprox10" onclick="Calcular10()"></td>
+                
+                <td> <input type="time" name="txtPM10" id="txtPM10"></td>
+
+                <td><input type="time" name="txtHrL10" id="txtHrL10"> </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS11" id="txtHrS11" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox11" id="btnAprox11" onclick="Calcular11()"></td>
+                
+                <td> <input type="time" name="txtPM11" id="txtPM11"></td>
+
+                <td><input type="time" name="txtHrL11" id="txtHrL11"> </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS12" id="txtHrS12" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox12" id="btnAprox12" onclick="Calcular12()"></td>
+                
+                <td> <input type="time" name="txtPM12" id="txtPM12"></td>
+
+                <td><input type="time" name="txtHrL12" id="txtHrL12"> </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS13" id="txtHrS13" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox13" id="btnAprox13" onclick="Calcular13()"></td>
+                
+                <td> <input type="time" name="txtPM13" id="txtPM13"></td>
+
+                <td><input type="time" name="txtHrL13" id="txtHrL13"> </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS14" id="txtHrS14" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox14" id="btnAprox14" onclick="Calcular14()"></td>
+                
+                <td> <input type="time" name="txtPM14" id="txtPM14"></td>
+
+                <td><input type="time" name="txtHrL14" id="txtHrL14"> </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS15" id="txtHrS15" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox15" id="btnAprox15" onclick="Calcular15()"></td>
+                
+                <td> <input type="time" name="txtPM15" id="txtPM15"></td>
+
+                <td><input type="time" name="txtHrL15" id="txtHrL15"> </td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>
+                    <select name="select">
+                        <option value="value1">CHAPULHUACAN-EL RAYO</option>
+                        <option value="value2" selected>EL RAYO-CHAPULHUACAN</option>
+                </td>
+
+                <td><input type="time" name="txtHrS16" id="txtHrS16" required></td>
+                
+                <td> <input type="button" value="Aprox." name="btnAprox16" id="btnAprox16" onclick="Calcular16()"></td>
+                
+                <td> <input type="time" name="txtPM16" id="txtPM16"></td>
+
+                <td><input type="time" name="txtHrL16" id="txtHrL16"> </td>
+            </tr>
+            
+        </table>
+    </form>
+    <br>
+    <br>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    background-color: #daecb4;
+}
+a{
+    text-decoration: none;
+    color: #ffb000;
+}
+header{
+    display: flex;
+    min-height: 90px;
+    background-color: #296126;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 80px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+.menu {
+    position: absolute; 
+    top: 110px;
+    left: 0;
+    background-color: #2e6c2b;
+    width: 230px;  
+    height: 100vh;
+    box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    flex-direction: column; 
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu nav ul {
+    display: flex; 
+    flex-direction: column; 
+    list-style: none;
+    padding: 0;
+}
+
+.menu nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.menu nav a i {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.submenu {
+    position: relative; 
+    background-color: #3a7e36;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.submenu.show {
+    max-height: 800px; 
+}
+
+.submenu ul {
+    display: flex;
+    flex-direction: column;  
+    padding: 10px;
+    gap: 5px;  
+}
+
+.submenu ul li {
+    width: 100%;
+}
+
+.submenu ul li a {
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.open_submenu {
+    position: relative;
+    margin-bottom: 5px;  
+}
+.main-cointainer{
+    display: flex;
+    margin-top: 90px;
+    box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.mapa{
+    margin-left: 250px;
+    width: calc(100%-250px);
+    height: 965px;
+}
+.mapa iframe{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
